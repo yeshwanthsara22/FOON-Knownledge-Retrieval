@@ -1,0 +1,249 @@
+[
+    {
+        "input_nodes": [
+            {
+                "label": "measuringcup",
+                "states": [],
+                "ingredients": [
+                    "sugar",
+                    "groundespresso",
+                    "groundcocoa"
+                ],
+                "container": null
+            }
+        ],
+        "motion_node": "pour",
+        "output_nodes": [
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "sugar",
+                    "groundespresso",
+                    "groundcocoa"
+                ],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "sugar",
+                    "groundespresso",
+                    "groundcocoa"
+                ],
+                "container": null
+            },
+            {
+                "label": "water",
+                "states": [
+                    "liquid"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "pour",
+        "output_nodes": [
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "sugar",
+                    "groundespresso",
+                    "groundcocoa",
+                    "water"
+                ],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "blender",
+                "states": ["empty"],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "sugar",
+                    "groundespresso",
+                    "groundcocoa",
+                    "water"
+                ],
+                "container": null
+            }
+        ],
+        "motion_node": "pour",
+        "output_nodes": [
+            {
+                "label": "blender",
+                "states": [],
+                "ingredients": [
+                    "sugar",
+                    "groundespresso",
+                    "groundcocoa",
+                    "water"
+                ],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "blender",
+                "states": [],
+                "ingredients": [
+                    "sugar",
+                    "groundespresso",
+                    "groundcocoa",
+                    "water"
+                ],
+                "container": null
+            },
+            {
+                "label": "milk",
+                "states": ["liquid"],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "pour",
+        "output_nodes": [
+            {
+                "label": "blender",
+                "states": [],
+                "ingredients": [
+                    "sugar",
+                    "groundespresso",
+                    "groundcocoa",
+                    "water",
+                    "milk"
+                ],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "blender",
+                "states": [],
+                "ingredients": [
+                    "sugar",
+                    "groundespresso",
+                    "groundcocoa",
+                    "water",
+                    "milk"
+                ],
+                "container": null
+            },
+            {
+                "label": "banana",
+                "states": ["ripe", "chopped"],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "add",
+        "output_nodes": [
+            {
+                "label": "blender",
+                "states": [],
+                "ingredients": [
+                    "sugar",
+                    "groundespresso",
+                    "groundcocoa",
+                    "water",
+                    "milk",
+                    "banana"
+                ],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "blender",
+                "states": [],
+                "ingredients": [
+                    "sugar",
+                    "groundespresso",
+                    "groundcocoa",
+                    "water",
+                    "milk",
+                    "banana"
+                ],
+                "container": null
+            },
+            {
+                "label": "ice",
+                "states": ["solid"],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "add",
+        "output_nodes": [
+            {
+                "label": "blender",
+                "states": [],
+                "ingredients": [
+                    "sugar",
+                    "groundespresso",
+                    "groundcocoa",
+                    "water",
+                    "milk",
+                    "banana",
+                    "ice"
+                ],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "blender",
+                "states": [],
+                "ingredients": [
+                    "sugar",
+                    "groundespresso",
+                    "groundcocoa",
+                    "water",
+                    "milk",
+                    "banana",
+                    "ice"
+                ],
+                "container": null
+            }
+        ],
+        "motion_node": "blend",
+        "output_nodes": [
+            {
+                "label": "blender",
+                "states": ["smooth"],
+                "ingredients": [
+                    "sugar",
+                    "groundespresso",
+                    "groundcocoa",
+                    "water",
+                    "milk",
+                    "banana",
+                    "ice"
+                ],
+                "container": null
+            }
+        ]
+    }
+]

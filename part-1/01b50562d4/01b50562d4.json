@@ -1,0 +1,607 @@
+[
+  {
+    "input_nodes": [
+      {
+        "label": "strawberry",
+        "states": ["whole"],
+        "ingredients": [],
+        "container": null
+      },
+      {
+        "label": "knife",
+        "states": [],
+        "ingredients": [],
+        "container": null
+      }
+    ],
+    "motion_node": "slice",
+    "output_nodes": [
+      {
+        "label": "strawberry",
+        "states": ["sliced"],
+        "ingredients": [],
+        "container": null
+      }
+    ]
+  },
+  {
+    "input_nodes": [
+      {
+        "label": "bowl",
+        "states": ["empty"],
+        "ingredients": [],
+        "container": null
+      },
+      {
+        "label": "spinach",
+        "states": ["leaf"],
+        "ingredients": [],
+        "container": "bowl"
+      }
+    ],
+    "motion_node": "pick-and-place",
+    "output_nodes": [
+      {
+        "label": "bowl",
+        "states": [],
+        "ingredients": ["spinach"],
+        "container": null
+      }
+    ]
+  },
+  {
+    "input_nodes": [
+      {
+        "label": "bowl",
+        "states": [],
+        "ingredients": ["spinach"],
+        "container": null
+      },
+      {
+        "label": "strawberry",
+        "states": ["sliced"],
+        "ingredients": [],
+        "container": null
+      }
+    ],
+    "motion_node": "add",
+    "output_nodes": [
+      {
+        "label": "bowl",
+        "states": [],
+        "ingredients": ["spinach", "strawberry"],
+        "container": null
+      }
+    ]
+  },
+  {
+    "input_nodes": [
+      {
+        "label": "bowl",
+        "states": [],
+        "ingredients": ["spinach", "strawberry"],
+        "container": null
+      }
+    ],
+    "motion_node": "shake",
+    "output_nodes": [
+      {
+        "label": "bowl",
+        "states": [],
+        "ingredients": ["spinach", "strawberry", "liquid"],
+        "container": null
+      }
+    ]
+  },
+  {
+    "input_nodes": [
+      {
+        "label": "bowl",
+        "states": [],
+        "ingredients": ["spinach", "strawberry", "liquid"],
+        "container": null
+      },
+      {
+        "label": "strawberry",
+        "states": ["sliced"],
+        "ingredients": [],
+        "container": "bowl"
+      }
+    ],
+    "motion_node": "pour",
+    "output_nodes": [
+      {
+        "label": "bowl",
+        "states": [],
+        "ingredients": ["spinach", "strawberry", "liquid"],
+        "container": null
+      }
+    ]
+  },
+  {
+    "input_nodes": [
+      {
+        "label": "bowl",
+        "states": [],
+        "ingredients": ["spinach", "strawberry", "liquid"],
+        "container": null
+      },
+      {
+        "label": "orange",
+        "states": ["halved"],
+        "ingredients": [],
+        "container": "bowl"
+      }
+    ],
+    "motion_node": "pick-and-place",
+    "output_nodes": [
+      {
+        "label": "bowl",
+        "states": [],
+        "ingredients": ["spinach", "strawberry", "liquid", "orange"],
+        "container": null
+      }
+    ]
+  },
+  {
+    "input_nodes": [
+      {
+        "label": "bowl",
+        "states": [],
+        "ingredients": ["spinach", "strawberry", "liquid", "orange"],
+        "container": null
+      },
+      {
+        "label": "orange",
+        "states": ["halved"],
+        "ingredients": [],
+        "container": "bowl"
+      }
+    ],
+    "motion_node": "peel",
+    "output_nodes": [
+      {
+        "label": "orange",
+        "states": ["peeled"],
+        "ingredients": [],
+        "container": "bowl"
+      }
+    ]
+  },
+  {
+    "input_nodes": [
+      {
+        "label": "bowl",
+        "states": [],
+        "ingredients": ["spinach", "strawberry", "liquid", "orange"],
+        "container": null
+      },
+      {
+        "label": "orange",
+        "states": ["peeled"],
+        "ingredients": [],
+        "container": "bowl"
+      },
+      {
+        "label": "knife",
+        "states": [],
+        "ingredients": [],
+        "container": null
+      }
+    ],
+    "motion_node": "cut",
+    "output_nodes": [
+      {
+        "label": "orange",
+        "states": ["sliced"],
+        "ingredients": [],
+        "container": "bowl"
+      }
+    ]
+  },
+  {
+    "input_nodes": [
+      {
+        "label": "bowl",
+        "states": [],
+        "ingredients": ["spinach", "strawberry", "liquid", "orange"],
+        "container": null
+      },
+      {
+        "label": "orange",
+        "states": ["sliced"],
+        "ingredients": [],
+        "container": "bowl"
+      }
+    ],
+    "motion_node": "pick-and-place",
+    "output_nodes": [
+      {
+        "label": "bowl",
+        "states": [],
+        "ingredients": ["spinach", "strawberry", "liquid", "orange", "orange"],
+        "container": null
+      }
+    ]
+  },
+  {
+    "input_nodes": [
+      {
+        "label": "bowl",
+        "states": [],
+        "ingredients": ["spinach", "strawberry", "liquid", "orange", "orange"],
+        "container": null
+      },
+      {
+        "label": "olive",
+        "states": ["sliced"],
+        "ingredients": [],
+        "container": null
+      }
+    ],
+    "motion_node": "pick-and-place",
+    "output_nodes": [
+      {
+        "label": "bowl",
+        "states": [],
+        "ingredients": [
+          "spinach",
+          "strawberry",
+          "liquid",
+          "orange",
+          "orange",
+          "olive"
+        ],
+        "container": null
+      }
+    ]
+  },
+  {
+    "input_nodes": [
+      {
+        "label": "bowl",
+        "states": [],
+        "ingredients": [
+          "spinach",
+          "strawberry",
+          "liquid",
+          "orange",
+          "orange",
+          "olive"
+        ],
+        "container": null
+      },
+      {
+        "label": "olive",
+        "states": ["sliced"],
+        "ingredients": [],
+        "container": "bowl"
+      }
+    ],
+    "motion_node": "pick-and-place",
+    "output_nodes": [
+      {
+        "label": "bowl",
+        "states": [],
+        "ingredients": [
+          "spinach",
+          "strawberry",
+          "liquid",
+          "orange",
+          "orange",
+          "olive"
+        ],
+        "container": null
+      }
+    ]
+  },
+  {
+    "input_nodes": [
+      {
+        "label": "bowl",
+        "states": [],
+        "ingredients": [
+          "spinach",
+          "strawberry",
+          "liquid",
+          "orange",
+          "orange",
+          "olive"
+        ],
+        "container": null
+      },
+      {
+        "label": "olive",
+        "states": ["sliced"],
+        "ingredients": [],
+        "container": "bowl"
+      }
+    ],
+    "motion_node": "pick-and-place",
+    "output_nodes": [
+      {
+        "label": "bowl",
+        "states": [],
+        "ingredients": [
+          "spinach",
+          "strawberry",
+          "liquid",
+          "orange",
+          "orange",
+          "olive",
+          "nut"
+        ],
+        "container": null
+      }
+    ]
+  },
+  {
+    "input_nodes": [
+      {
+        "label": "bowl",
+        "states": [],
+        "ingredients": [
+          "spinach",
+          "strawberry",
+          "liquid",
+          "orange",
+          "orange",
+          "olive",
+          "nut"
+        ],
+        "container": null
+      },
+      {
+        "label": "nut",
+        "states": ["halved"],
+        "ingredients": [],
+        "container": "bowl"
+      }
+    ],
+    "motion_node": "pick-and-place",
+    "output_nodes": [
+      {
+        "label": "bowl",
+        "states": [],
+        "ingredients": [
+          "spinach",
+          "strawberry",
+          "liquid",
+          "orange",
+          "orange",
+          "olive",
+          "nut"
+        ],
+        "container": null
+      }
+    ]
+  },
+  {
+    "input_nodes": [
+      {
+        "label": "bowl",
+        "states": [],
+        "ingredients": [
+          "spinach",
+          "strawberry",
+          "liquid",
+          "orange",
+          "orange",
+          "olive",
+          "nut"
+        ],
+        "container": null
+      },
+      {
+        "label": "bowl",
+        "states": [],
+        "ingredients": ["honey"],
+        "container": null
+      }
+    ],
+    "motion_node": "pour",
+    "output_nodes": [
+      {
+        "label": "bowl",
+        "states": [],
+        "ingredients": [
+          "spinach",
+          "strawberry",
+          "liquid",
+          "orange",
+          "orange",
+          "olive",
+          "nut",
+          "honey"
+        ],
+        "container": null
+      }
+    ]
+  },
+  {
+    "input_nodes": [
+      {
+        "label": "bowl",
+        "states": [],
+        "ingredients": [
+          "spinach",
+          "strawberry",
+          "liquid",
+          "orange",
+          "orange",
+          "olive",
+          "nut",
+          "honey"
+        ],
+        "container": null
+      },
+      {
+        "label": "bowl",
+        "states": [],
+        "ingredients": ["mustard"],
+        "container": null
+      }
+    ],
+    "motion_node": "pour",
+    "output_nodes": [
+      {
+        "label": "bowl",
+        "states": [],
+        "ingredients": [
+          "spinach",
+          "strawberry",
+          "liquid",
+          "orange",
+          "orange",
+          "olive",
+          "nut",
+          "honey",
+          "mustard"
+        ],
+        "container": null
+      }
+    ]
+  },
+  {
+    "input_nodes": [
+      {
+        "label": "bowl",
+        "states": [],
+        "ingredients": [
+          "spinach",
+          "strawberry",
+          "liquid",
+          "orange",
+          "orange",
+          "olive",
+          "nut",
+          "honey",
+          "mustard"
+        ],
+        "container": null
+      },
+      {
+        "label": "liquid",
+        "states": [],
+        "ingredients": [],
+        "container": "bowl"
+      }
+    ],
+    "motion_node": "pour",
+    "output_nodes": [
+      {
+        "label": "bowl",
+        "states": [],
+        "ingredients": [
+          "spinach",
+          "strawberry",
+          "liquid",
+          "orange",
+          "orange",
+          "olive",
+          "nut",
+          "honey",
+          "mustard",
+          "liquid"
+        ],
+        "container": null
+      }
+    ]
+  },
+  {
+    "input_nodes": [
+      {
+        "label": "bowl",
+        "states": [],
+        "ingredients": [
+          "spinach",
+          "strawberry",
+          "liquid",
+          "orange",
+          "orange",
+          "olive",
+          "nut",
+          "honey",
+          "mustard",
+          "liquid"
+        ],
+        "container": null
+      },
+      {
+        "label": "spinach",
+        "states": ["leaf"],
+        "ingredients": [],
+        "container": "bowl"
+      }
+    ],
+    "motion_node": "pick-and-place",
+    "output_nodes": [
+      {
+        "label": "bowl",
+        "states": [],
+        "ingredients": [
+          "spinach",
+          "strawberry",
+          "liquid",
+          "orange",
+          "orange",
+          "olive",
+          "nut",
+          "honey",
+          "mustard",
+          "liquid",
+          "spinach"
+        ],
+        "container": null
+      }
+    ]
+  },
+  {
+    "input_nodes": [
+      {
+        "label": "bowl",
+        "states": [],
+        "ingredients": [
+          "spinach",
+          "strawberry",
+          "liquid",
+          "orange",
+          "orange",
+          "olive",
+          "nut",
+          "honey",
+          "mustard",
+          "liquid",
+          "spinach"
+        ],
+        "container": null
+      },
+      {
+        "label": "spinach",
+        "states": ["leaf"],
+        "ingredients": [],
+        "container": "bowl"
+      }
+    ],
+    "motion_node": "toss",
+    "output_nodes": [
+      {
+        "label": "salad",
+        "states": ["mixed"],
+        "ingredients": [
+          "spinach",
+          "strawberry",
+          "liquid",
+          "orange",
+          "orange",
+          "olive",
+          "nut",
+          "honey",
+          "mustard",
+          "liquid"
+        ],
+        "container": "bowl"
+      }
+    ]
+  }
+]

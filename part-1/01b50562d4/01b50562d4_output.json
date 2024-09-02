@@ -1,0 +1,337 @@
+[
+  {
+    "input_nodes": [
+      {
+        "label": "spinach",
+        "states": ["leaf"],
+        "ingredients": [],
+        "container": null
+      },
+      {
+        "label": "strawberry",
+        "states": ["sliced"],
+        "ingredients": [],
+        "container": null
+      },
+      {
+        "label": "orange",
+        "states": ["halved"],
+        "ingredients": [],
+        "container": null
+      },
+      {
+        "label": "olive",
+        "states": ["sliced"],
+        "ingredients": [],
+        "container": null
+      },
+      {
+        "label": "nut",
+        "states": ["halved"],
+        "ingredients": [],
+        "container": null
+      },
+      {
+        "label": "honey",
+        "states": ["liquid"],
+        "ingredients": [],
+        "container": null
+      },
+      {
+        "label": "mustard",
+        "states": ["liquid"],
+        "ingredients": [],
+        "container": null
+      },
+      {
+        "label": "liquid",
+        "states": ["oil"],
+        "ingredients": [],
+        "container": null
+      }
+    ],
+    "motion_node": "gather",
+    "output_nodes": [
+      {
+        "label": "spinach",
+        "states": ["leaf"],
+        "ingredients": [],
+        "container": null
+      },
+      {
+        "label": "strawberry",
+        "states": ["sliced"],
+        "ingredients": [],
+        "container": null
+      },
+      {
+        "label": "orange",
+        "states": ["halved"],
+        "ingredients": [],
+        "container": null
+      },
+      {
+        "label": "olive",
+        "states": ["sliced"],
+        "ingredients": [],
+        "container": null
+      },
+      {
+        "label": "nut",
+        "states": ["halved"],
+        "ingredients": [],
+        "container": null
+      },
+      {
+        "label": "honey",
+        "states": ["liquid"],
+        "ingredients": [],
+        "container": null
+      },
+      {
+        "label": "mustard",
+        "states": ["liquid"],
+        "ingredients": [],
+        "container": null
+      },
+      {
+        "label": "liquid",
+        "states": ["oil"],
+        "ingredients": [],
+        "container": null
+      }
+    ]
+  },
+  {
+    "input_nodes": [
+      {
+        "label": "spinach",
+        "states": ["leaf"],
+        "ingredients": [],
+        "container": null
+      },
+      {
+        "label": "strawberry",
+        "states": ["sliced"],
+        "ingredients": [],
+        "container": null
+      },
+      {
+        "label": "orange",
+        "states": ["halved"],
+        "ingredients": [],
+        "container": null
+      },
+      {
+        "label": "olive",
+        "states": ["sliced"],
+        "ingredients": [],
+        "container": null
+      },
+      {
+        "label": "nut",
+        "states": ["halved"],
+        "ingredients": [],
+        "container": null
+      },
+      {
+        "label": "honey",
+        "states": ["liquid"],
+        "ingredients": [],
+        "container": null
+      },
+      {
+        "label": "mustard",
+        "states": ["liquid"],
+        "ingredients": [],
+        "container": null
+      },
+      {
+        "label": "liquid",
+        "states": ["oil"],
+        "ingredients": [],
+        "container": null
+      }
+    ],
+    "motion_node": "rinse-and-dry",
+    "output_nodes": [
+      {
+        "label": "spinach",
+        "states": ["leaf"],
+        "ingredients": [],
+        "container": null
+      }
+    ]
+  },
+  {
+    "input_nodes": [
+      {
+        "label": "spinach",
+        "states": ["leaf"],
+        "ingredients": [],
+        "container": null
+      }
+    ],
+    "motion_node": "place",
+    "output_nodes": [
+      {
+        "label": "bowl",
+        "states": [],
+        "ingredients": ["spinach"],
+        "container": null
+      }
+    ]
+  },
+  {
+    "input_nodes": [
+      {
+        "label": "strawberry",
+        "states": ["sliced"],
+        "ingredients": [],
+        "container": null
+      }
+    ],
+    "motion_node": "add",
+    "output_nodes": [
+      {
+        "label": "bowl",
+        "states": [],
+        "ingredients": ["spinach", "strawberry"],
+        "container": null
+      }
+    ]
+  },
+  {
+    "input_nodes": [
+      {
+        "label": "orange",
+        "states": ["halved"],
+        "ingredients": [],
+        "container": null
+      }
+    ],
+    "motion_node": "add",
+    "output_nodes": [
+      {
+        "label": "bowl",
+        "states": [],
+        "ingredients": ["spinach", "strawberry", "orange"],
+        "container": null
+      }
+    ]
+  },
+  {
+    "input_nodes": [
+      {
+        "label": "olive",
+        "states": ["sliced"],
+        "ingredients": [],
+        "container": null
+      }
+    ],
+    "motion_node": "add",
+    "output_nodes": [
+      {
+        "label": "bowl",
+        "states": [],
+        "ingredients": ["spinach", "strawberry", "orange", "olive"],
+        "container": null
+      }
+    ]
+  },
+  {
+    "input_nodes": [
+      {
+        "label": "nut",
+        "states": ["halved"],
+        "ingredients": [],
+        "container": null
+      }
+    ],
+    "motion_node": "add",
+    "output_nodes": [
+      {
+        "label": "bowl",
+        "states": [],
+        "ingredients": ["spinach", "strawberry", "orange", "olive", "nut"],
+        "container": null
+      }
+    ]
+  },
+  {
+    "input_nodes": [
+      {
+        "label": "honey",
+        "states": ["liquid"],
+        "ingredients": [],
+        "container": null
+      }
+    ],
+    "motion_node": "add",
+    "output_nodes": [
+      {
+        "label": "bowl",
+        "states": [],
+        "ingredients": ["spinach", "strawberry", "orange", "olive", "nut", "honey"],
+        "container": null
+      }
+    ]
+  },
+  {
+    "input_nodes": [
+      {
+        "label": "mustard",
+        "states": ["liquid"],
+        "ingredients": [],
+        "container": null
+      }
+    ],
+    "motion_node": "add",
+    "output_nodes": [
+      {
+        "label": "bowl",
+        "states": [],
+        "ingredients": ["spinach", "strawberry", "orange", "olive", "nut", "honey", "mustard"],
+        "container": null
+      }
+    ]
+  },
+  {
+    "input_nodes": [
+      {
+        "label": "liquid",
+        "states": ["oil"],
+        "ingredients": [],
+        "container": null
+      }
+    ],
+    "motion_node": "add",
+    "output_nodes": [
+      {
+        "label": "bowl",
+        "states": [],
+        "ingredients": ["spinach", "strawberry", "orange", "olive", "nut", "honey", "mustard", "oil"],
+        "container": null
+      }
+    ]
+  },
+  {
+    "input_nodes": [
+      {
+        "label": "bowl",
+        "states": [],
+        "ingredients": ["spinach", "strawberry", "orange", "olive", "nut", "honey", "mustard", "oil"],
+        "container": null
+      }
+    ],
+    "motion_node": "toss",
+    "output_nodes": [
+      {
+        "label": "bowl",
+        "states": ["mixed"],
+        "ingredients": ["spinach", "strawberry", "orange", "olive", "nut", "honey", "mustard", "oil"],
+        "container": null
+      }
+    ]
+  }
+]

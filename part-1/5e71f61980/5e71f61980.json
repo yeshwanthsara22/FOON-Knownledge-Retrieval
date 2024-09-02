@@ -1,0 +1,572 @@
+[
+    {
+        "input_nodes": [
+            {
+                "label": "fryingpan",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "egg"
+                ],
+                "container": null
+            },
+            {
+                "label": "egg",
+                "states": [
+                    "whole"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            }
+        ],
+        "motion_node": "pour",
+        "output_nodes": [
+            {
+                "label": "fryingpan",
+                "states": [],
+                "ingredients": [
+                    "egg"
+                ],
+                "container": null
+            },
+            {
+                "label": "egg",
+                "states": [
+                    "whole"
+                ],
+                "ingredients": [],
+                "container": "pan"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "egg",
+                "states": [
+                    "whole"
+                ],
+                "ingredients": [],
+                "container": "pan"
+            },
+            {
+                "label": "butter",
+                "states": [
+                    "cubed"
+                ],
+                "ingredients": [],
+                "container": "pan"
+            }
+        ],
+        "motion_node": "melt",
+        "output_nodes": [
+            {
+                "label": "egg",
+                "states": [
+                    "raw"
+                ],
+                "ingredients": [],
+                "container": "pan"
+            },
+            {
+                "label": "butter",
+                "states": [
+                    "melted"
+                ],
+                "ingredients": [],
+                "container": "pan"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "stove",
+                "states": [
+                    "on"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "heat",
+        "output_nodes": [
+            {
+                "label": "fryingpan",
+                "states": [],
+                "ingredients": [
+                    "egg",
+                    "butter"
+                ],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "fryingpan",
+                "states": [],
+                "ingredients": [
+                    "egg",
+                    "butter"
+                ],
+                "container": null
+            },
+            {
+                "label": "egg",
+                "states": [
+                    "raw"
+                ],
+                "ingredients": [],
+                "container": "pan"
+            }
+        ],
+        "motion_node": "pour",
+        "output_nodes": [
+            {
+                "label": "fryingpan",
+                "states": [],
+                "ingredients": [
+                    "egg",
+                    "butter"
+                ],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "fryingpan",
+                "states": [],
+                "ingredients": [
+                    "egg",
+                    "butter"
+                ],
+                "container": null
+            },
+            {
+                "label": "egg",
+                "states": [
+                    "whole"
+                ],
+                "ingredients": [],
+                "container": "pan"
+            }
+        ],
+        "motion_node": "scramble",
+        "output_nodes": [
+            {
+                "label": "omelette",
+                "states": [
+                    "scrambled"
+                ],
+                "ingredients": [
+                    "egg",
+                    "butter"
+                ],
+                "container": "pan"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "omelette",
+                "states": [
+                    "scrambled"
+                ],
+                "ingredients": [
+                    "egg",
+                    "butter"
+                ],
+                "container": "pan"
+            },
+            {
+                "label": "ham",
+                "states": [
+                    "sliced"
+                ],
+                "ingredients": [],
+                "container": "cuttingboard"
+            },
+            {
+                "label": "cheese",
+                "states": [
+                    "creamy"
+                ],
+                "ingredients": [],
+                "container": "cuttingboard"
+            }
+        ],
+        "motion_node": "pick-and-place",
+        "output_nodes": [
+            {
+                "label": "omelette",
+                "states": [
+                    "scrambled"
+                ],
+                "ingredients": [
+                    "egg",
+                    "butter",
+                    "ham",
+                    "cheese"
+                ],
+                "container": "pan"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "omelette",
+                "states": [
+                    "scrambled"
+                ],
+                "ingredients": [
+                    "egg",
+                    "butter",
+                    "ham",
+                    "cheese"
+                ],
+                "container": "pan"
+            },
+            {
+                "label": "spatula",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "pick-and-use",
+        "output_nodes": [
+            {
+                "label": "omelette",
+                "states": [
+                    "scrambled"
+                ],
+                "ingredients": [
+                    "egg",
+                    "butter",
+                    "ham",
+                    "cheese"
+                ],
+                "container": "pan"
+            },
+            {
+                "label": "spatula",
+                "states": [],
+                "ingredients": [],
+                "container": "omelette"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "omelette",
+                "states": [
+                    "scrambled"
+                ],
+                "ingredients": [
+                    "egg",
+                    "butter",
+                    "ham",
+                    "cheese"
+                ],
+                "container": "pan"
+            },
+            {
+                "label": "spatula",
+                "states": [],
+                "ingredients": [],
+                "container": "omelette"
+            },
+            {
+                "label": "ham",
+                "states": [
+                    "sliced"
+                ],
+                "ingredients": [],
+                "container": "omelette"
+            }
+        ],
+        "motion_node": "spread",
+        "output_nodes": [
+            {
+                "label": "omelette",
+                "states": [
+                    "scrambled"
+                ],
+                "ingredients": [
+                    "egg",
+                    "ham",
+                    "cheese"
+                ],
+                "container": "pan"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "omelette",
+                "states": [
+                    "scrambled"
+                ],
+                "ingredients": [
+                    "egg",
+                    "ham",
+                    "cheese"
+                ],
+                "container": "pan"
+            },
+            {
+                "label": "ham",
+                "states": [
+                    "sliced"
+                ],
+                "ingredients": [],
+                "container": "omelette"
+            },
+            {
+                "label": "cheese",
+                "states": [
+                    "creamy"
+                ],
+                "ingredients": [],
+                "container": "omelette"
+            },
+            {
+                "label": "spatula",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "fold",
+        "output_nodes": [
+            {
+                "label": "omelette",
+                "states": [
+                    "folded"
+                ],
+                "ingredients": [
+                    "egg",
+                    "ham",
+                    "cheese"
+                ],
+                "container": "pan"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "omelette",
+                "states": [
+                    "folded"
+                ],
+                "ingredients": [
+                    "egg",
+                    "ham",
+                    "cheese"
+                ],
+                "container": "pan"
+            },
+            {
+                "label": "spatula",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "pick-and-use",
+        "output_nodes": [
+            {
+                "label": "omelette",
+                "states": [
+                    "folded"
+                ],
+                "ingredients": [
+                    "egg",
+                    "ham",
+                    "cheese"
+                ],
+                "container": "pan"
+            },
+            {
+                "label": "spatula",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "omelette",
+                "states": [
+                    "folded"
+                ],
+                "ingredients": [
+                    "egg",
+                    "ham",
+                    "cheese"
+                ],
+                "container": "pan"
+            },
+            {
+                "label": "spatula",
+                "states": [],
+                "ingredients": [],
+                "container": "omelette"
+            },
+            {
+                "label": "stove",
+                "states": [
+                    "on"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "cook",
+        "output_nodes": [
+            {
+                "label": "omelette",
+                "states": [
+                    "folded"
+                ],
+                "ingredients": [
+                    "egg",
+                    "ham",
+                    "cheese"
+                ],
+                "container": "pan"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "omelette",
+                "states": [
+                    "folded"
+                ],
+                "ingredients": [
+                    "egg",
+                    "ham",
+                    "cheese"
+                ],
+                "container": "pan"
+            },
+            {
+                "label": "stove",
+                "states": [
+                    "on"
+                ],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "ham",
+                "states": [
+                    "sliced"
+                ],
+                "ingredients": [],
+                "container": "omelette"
+            },
+            {
+                "label": "cheese",
+                "states": [
+                    "creamy"
+                ],
+                "ingredients": [],
+                "container": "omelette"
+            },
+            {
+                "label": "honey",
+                "states": [
+                    "thick"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "drizzle",
+        "output_nodes": [
+            {
+                "label": "omelette",
+                "states": [
+                    "folded"
+                ],
+                "ingredients": [
+                    "egg",
+                    "ham",
+                    "cheese",
+                    "honey"
+                ],
+                "container": "pan"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "omelette",
+                "states": [
+                    "folded"
+                ],
+                "ingredients": [
+                    "egg",
+                    "ham",
+                    "cheese",
+                    "honey"
+                ],
+                "container": "pan"
+            },
+            {
+                "label": "ham",
+                "states": [
+                    "sliced"
+                ],
+                "ingredients": [],
+                "container": "omelette"
+            },
+            {
+                "label": "cheese",
+                "states": [
+                    "creamy"
+                ],
+                "ingredients": [],
+                "container": "omelette"
+            }
+        ],
+        "motion_node": "serve",
+        "output_nodes": [
+            {
+                "label": "omelette",
+                "states": [
+                    "folded"
+                ],
+                "ingredients": [
+                    "egg",
+                    "honey",
+                    "ham",
+                    "cheese"
+                ],
+                "container": "pan"
+            }
+        ]
+    }
+]

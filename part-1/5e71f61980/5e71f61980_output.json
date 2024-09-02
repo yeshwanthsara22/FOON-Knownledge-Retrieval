@@ -1,0 +1,335 @@
+[
+    {
+        "input_nodes": [
+            {
+                "label": "fryingpan",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "butter",
+                "states": [
+                    "cubed"
+                ],
+                "ingredients": [],
+                "container": "pan"
+            }
+        ],
+        "motion_node": "melt",
+        "output_nodes": [
+            {
+                "label": "fryingpan",
+                "states": [],
+                "ingredients": [
+                    "butter"
+                ],
+                "container": null
+            },
+            {
+                "label": "butter",
+                "states": [
+                    "melted"
+                ],
+                "ingredients": [],
+                "container": "pan"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "egg"
+                ],
+                "container": null
+            },
+            {
+                "label": "egg",
+                "states": [
+                    "whole"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            }
+        ],
+        "motion_node": "beat",
+        "output_nodes": [
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "egg"
+                ],
+                "container": null
+            },
+            {
+                "label": "egg",
+                "states": [
+                    "mixed"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "fryingpan",
+                "states": [],
+                "ingredients": [
+                    "butter"
+                ],
+                "container": null
+            },
+            {
+                "label": "egg",
+                "states": [
+                    "mixed"
+                ],
+                "ingredients": [],
+                "container": "pan"
+            }
+        ],
+        "motion_node": "pour",
+        "output_nodes": [
+            {
+                "label": "fryingpan",
+                "states": [],
+                "ingredients": [
+                    "butter",
+                    "egg"
+                ],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "fryingpan",
+                "states": [],
+                "ingredients": [
+                    "butter",
+                    "egg"
+                ],
+                "container": null
+            }
+        ],
+        "motion_node": "spread",
+        "output_nodes": [
+            {
+                "label": "fryingpan",
+                "states": [],
+                "ingredients": [
+                    "butter",
+                    "egg"
+                ],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "fryingpan",
+                "states": [],
+                "ingredients": [
+                    "butter",
+                    "egg"
+                ],
+                "container": null
+            },
+            {
+                "label": "ham",
+                "states": [
+                    "sliced"
+                ],
+                "ingredients": [],
+                "container": "cuttingboard"
+            },
+            {
+                "label": "cheese",
+                "states": [
+                    "creamy"
+                ],
+                "ingredients": [],
+                "container": "cuttingboard"
+            }
+        ],
+        "motion_node": "add-toppings",
+        "output_nodes": [
+            {
+                "label": "fryingpan",
+                "states": [],
+                "ingredients": [
+                    "butter",
+                    "egg",
+                    "ham",
+                    "cheese"
+                ],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "fryingpan",
+                "states": [],
+                "ingredients": [
+                    "butter",
+                    "egg",
+                    "ham",
+                    "cheese"
+                ],
+                "container": null
+            },
+            {
+                "label": "spatula",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "fold",
+        "output_nodes": [
+            {
+                "label": "fryingpan",
+                "states": [],
+                "ingredients": [
+                    "butter",
+                    "egg",
+                    "ham",
+                    "cheese"
+                ],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "fryingpan",
+                "states": [],
+                "ingredients": [
+                    "butter",
+                    "egg",
+                    "ham",
+                    "cheese"
+                ],
+                "container": null
+            },
+            {
+                "label": "spatula",
+                "states": [],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "stove",
+                "states": [
+                    "on"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "cook",
+        "output_nodes": [
+            {
+                "label": "fryingpan",
+                "states": [],
+                "ingredients": [
+                    "butter",
+                    "egg",
+                    "ham",
+                    "cheese"
+                ],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "fryingpan",
+                "states": [],
+                "ingredients": [
+                    "butter",
+                    "egg",
+                    "ham",
+                    "cheese"
+                ],
+                "container": null
+            },
+            {
+                "label": "stove",
+                "states": [
+                    "on"
+                ],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "honey",
+                "states": [
+                    "thick"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "drizzle",
+        "output_nodes": [
+            {
+                "label": "fryingpan",
+                "states": [],
+                "ingredients": [
+                    "butter",
+                    "egg",
+                    "ham",
+                    "cheese",
+                    "honey"
+                ],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "fryingpan",
+                "states": [],
+                "ingredients": [
+                    "butter",
+                    "egg",
+                    "ham",
+                    "cheese",
+                    "honey"
+                ],
+                "container": null
+            }
+        ],
+        "motion_node": "serve",
+        "output_nodes": [
+            {
+                "label": "fryingpan",
+                "states": [],
+                "ingredients": [
+                    "butter",
+                    "egg",
+                    "ham",
+                    "cheese",
+                    "honey"
+                ],
+                "container": null
+            }
+        ]
+    }
+]

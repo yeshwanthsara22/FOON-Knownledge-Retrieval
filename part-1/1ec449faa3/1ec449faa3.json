@@ -1,0 +1,470 @@
+[
+    {
+        "input_nodes": [
+            {
+                "label": "measuringcup",
+                "states": [],
+                "ingredients": [
+                    "sugarcane",
+                    "groundespresso",
+                    "groundcocoa"
+                ],
+                "container": null
+            },
+            {
+                "label": "sugarcane",
+                "states": [
+                    "ground"
+                ],
+                "ingredients": [],
+                "container": "measuringcup"
+            },
+            {
+                "label": "groundespresso",
+                "states": [
+                    "ground"
+                ],
+                "ingredients": [],
+                "container": "measuringcup"
+            },
+            {
+                "label": "groundcocoa",
+                "states": [
+                    "ground"
+                ],
+                "ingredients": [],
+                "container": "measuringcup"
+            }
+        ],
+        "motion_node": "pour",
+        "output_nodes": [
+            {
+                "label": "bowl",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [
+                    "sugarcane",
+                    "groundespresso",
+                    "groundcocoa"
+                ],
+                "container": null
+            },
+            {
+                "label": "sugarcane",
+                "states": [
+                    "ground"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            },
+            {
+                "label": "groundespresso",
+                "states": [
+                    "ground"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            },
+            {
+                "label": "groundcocoa",
+                "states": [
+                    "ground"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "sugarcane",
+                    "groundespresso",
+                    "groundcocoa"
+                ],
+                "container": null
+            },
+            {
+                "label": "liquidwater",
+                "states": [
+                    "liquid"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            }
+        ],
+        "motion_node": "pour",
+        "output_nodes": [
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "sugarcane",
+                    "groundespresso",
+                    "groundcocoa",
+                    "liquidwater"
+                ],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "blender",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            },
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "sugarcane",
+                    "groundespresso",
+                    "groundcocoa",
+                    "liquidwater"
+                ],
+                "container": null
+            },
+            {
+                "label": "sugarcane",
+                "states": [
+                    "ground"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            },
+            {
+                "label": "groundespresso",
+                "states": [
+                    "ground"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            },
+            {
+                "label": "groundcocoa",
+                "states": [
+                    "ground"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            },
+            {
+                "label": "liquidwater",
+                "states": [
+                    "liquid"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            }
+        ],
+        "motion_node": "pour",
+        "output_nodes": [
+            {
+                "label": "blender",
+                "states": [],
+                "ingredients": [
+                    "sugarcane",
+                    "groundespresso",
+                    "groundcocoa",
+                    "liquidwater"
+                ],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "blender",
+                "states": [],
+                "ingredients": [
+                    "sugarcane",
+                    "groundespresso",
+                    "groundcocoa",
+                    "liquidwater"
+                ],
+                "container": null
+            },
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "sugarcane",
+                    "groundespresso",
+                    "groundcocoa",
+                    "liquidwater"
+                ],
+                "container": null
+            },
+            {
+                "label": "banana",
+                "states": [
+                    "ripe"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "pour",
+        "output_nodes": [
+            {
+                "label": "blender",
+                "states": [],
+                "ingredients": [
+                    "banana",
+                    "sugarcane",
+                    "groundespresso",
+                    "groundcocoa",
+                    "liquidwater"
+                ],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "blender",
+                "states": [],
+                "ingredients": [
+                    "banana",
+                    "sugarcane",
+                    "groundespresso",
+                    "groundcocoa",
+                    "liquidwater"
+                ],
+                "container": null
+            },
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "sugarcane",
+                    "groundespresso",
+                    "groundcocoa",
+                    "liquidwater"
+                ],
+                "container": null
+            },
+            {
+                "label": "ice",
+                "states": [
+                    "solid"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            }
+        ],
+        "motion_node": "pour",
+        "output_nodes": [
+            {
+                "label": "blender",
+                "states": [],
+                "ingredients": [
+                    "banana",
+                    "sugarcane",
+                    "groundespresso",
+                    "groundcocoa",
+                    "liquidwater",
+                    "ice"
+                ],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "blender",
+                "states": [],
+                "ingredients": [
+                    "banana",
+                    "sugarcane",
+                    "groundespresso",
+                    "groundcocoa",
+                    "liquidwater",
+                    "ice"
+                ],
+                "container": null
+            },
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "sugarcane",
+                    "groundespresso",
+                    "groundcocoa",
+                    "liquidwater"
+                ],
+                "container": null
+            }
+        ],
+        "motion_node": "blend",
+        "output_nodes": [
+            {
+                "label": "blender",
+                "states": [],
+                "ingredients": [
+                    "banana",
+                    "sugarcane",
+                    "groundespresso",
+                    "groundcocoa",
+                    "liquidwater",
+                    "ice"
+                ],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "blender",
+                "states": [],
+                "ingredients": [
+                    "banana",
+                    "sugarcane",
+                    "groundespresso",
+                    "groundcocoa",
+                    "liquidwater",
+                    "ice"
+                ],
+                "container": null
+            },
+            {
+                "label": "bowl",
+                "states": [],
+                "ingredients": [
+                    "sugarcane",
+                    "groundespresso",
+                    "groundcocoa",
+                    "liquidwater"
+                ],
+                "container": null
+            },
+            {
+                "label": "liquidmilk",
+                "states": [
+                    "liquid"
+                ],
+                "ingredients": [],
+                "container": "bowl"
+            }
+        ],
+        "motion_node": "pour",
+        "output_nodes": [
+            {
+                "label": "blender",
+                "states": [],
+                "ingredients": [
+                    "banana",
+                    "sugarcane",
+                    "groundespresso",
+                    "groundcocoa",
+                    "liquidwater",
+                    "ice",
+                    "milk"
+                ],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "blender",
+                "states": [],
+                "ingredients": [
+                    "banana",
+                    "sugarcane",
+                    "groundespresso",
+                    "groundcocoa",
+                    "liquidwater",
+                    "ice",
+                    "milk"
+                ],
+                "container": null
+            }
+        ],
+        "motion_node": "blend",
+        "output_nodes": [
+            {
+                "label": "blender",
+                "states": [],
+                "ingredients": [
+                    "foonada",
+                    "banana",
+                    "sugarcane",
+                    "groundespresso",
+                    "groundcocoa",
+                    "liquidwater",
+                    "ice",
+                    "milk"
+                ],
+                "container": null
+            }
+        ]
+    },
+    {
+        "input_nodes": [
+            {
+                "label": "blender",
+                "states": [],
+                "ingredients": [
+                    "foonada",
+                    "banana",
+                    "sugarcane",
+                    "groundespresso",
+                    "groundcocoa",
+                    "liquidwater",
+                    "ice",
+                    "milk"
+                ],
+                "container": null
+            },
+            {
+                "label": "glass",
+                "states": [
+                    "empty"
+                ],
+                "ingredients": [],
+                "container": null
+            }
+        ],
+        "motion_node": "pour",
+        "output_nodes": [
+            {
+                "label": "blender",
+                "states": [],
+                "ingredients": [
+                    "foonada",
+                    "banana",
+                    "sugarcane",
+                    "groundespresso",
+                    "groundcocoa",
+                    "liquidwater",
+                    "ice",
+                    "milk"
+                ],
+                "container": null
+            },
+            {
+                "label": "glass",
+                "states": [],
+                "ingredients": [
+                    "foonada"
+                ],
+                "container": null
+            }
+        ]
+    }
+]
